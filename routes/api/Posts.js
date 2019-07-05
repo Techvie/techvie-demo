@@ -10,10 +10,10 @@ const Post= require('../../models/PostSchema');
 //@access Pubilc
 
 router.get('/NewPost', (req, res) => {
-    Post.find()
-    //.sort({ date:-1 })
-    .then(Posts => res.json(Posts));
-});
+   Post.find()
+  .sort({ date:-1 })
+   .then(Posts => res.json(Posts));
+  });
 
 router.post('/AddNewPost', (req, res) => {
     const newPost= new Post({

@@ -49,20 +49,11 @@ export default class Post extends Component {
 //  this.getMessage.value = '';
 // }
 
-componentDidMount(){
-  axios.get('http://localhost:5000/api/NewPost')
-    .then(response => {
-      this.setState({ userarray: response.data });
-    })
-    .catch(function (error) { 
-      console.log(error);
-    })
-}
+
 render() {
 return (
 
 <div className="post-container"><br></br>
-<close/>
   <h1 className="post_heading">Create a Post</h1><br></br>
   <form className="form" onSubmit={this.onSubmit}>
    <input required type="text" 

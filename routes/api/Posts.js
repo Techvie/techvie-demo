@@ -9,7 +9,7 @@ const Post= require('../../models/PostSchema');
 //@desc GET All POSTS
 //@access Pubilc
 
-router.get('/', (req, res) => {
+router.get('/NewPost', (req, res) => {
     Post.find()
     //.sort({ date:-1 })
     .then(Posts => res.json(Posts));

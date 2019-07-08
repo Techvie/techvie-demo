@@ -12,7 +12,7 @@ app.use(cors());
 
 //DB config
 
-mongoose.connect('mongodb+srv://techvie:<password>@cluster0-ezolo.mongodb.net/test?retryWrites=true&w=majority',{ useNewUrlParser: true }, {useMongoClient: true});
+mongoose.connect('mongodb+srv://techvie:Inteli03@@cluster0-ezolo.mongodb.net/test?retryWrites=true&w=majority',{ useNewUrlParser: true }, {useMongoClient: true});
  
 mongoose.Promise = global.Promise;
 //User Routes

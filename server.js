@@ -6,6 +6,7 @@ var cors = require('cors');
 const app= express();
 
 //BodyParser Middleware
+app.use(express.urlencoded({extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
 

@@ -24,7 +24,7 @@ export default class Post extends Component {
     const obj = {
       title: this.state.post_title,
     };
-    axios.post('http://localhost:5000/api/AddNewPost', obj)
+    axios.post('https://sample-service1.herokuapp.com/api/AddNewPost', obj)
         .then(res => console.log(res.data));
     
     this.setState({
